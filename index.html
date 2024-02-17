@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BobyTechnical</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="bgimg">
+
+        <div class="manu">
+            <div class="leftmanu">
+                <h4>BobyTechnical</h4>
+            </div>
+            <div class="rigthmanu">
+                <ul id="check-class">
+                    <li id="firstlist">Home</li>
+                    <li>about us</li>
+                    <li>Contact</li>
+                    <li>Signup</li>
+                    <li onclick="openloginpopup()">Login</li>
+                </ul>
+                <a href="#" class="mobile-icon" onclick="manushow()">
+                    <i class="fa fa-bars"></i></a>
+            </div>
+        </div>
+        <div class="text">
+            <h4>DESIGN * DEVELOPMENT * BRANDING</h4>
+            <h1>CREATIVE & EXPERIENCED</h1>
+            <h3>WE ARE THE ONE THE WORLD'S TOP CREATIVE DESIGN AGENCIES</h3>
+            <button id="btn1">like share</button>
+            <button id="btn2">subscribe</button>
+        </div>
+    </div>
+
+    <div class="login" id="login">
+        <h2>Fill you details</h2>
+        <i class=""></i>
+        <input type="text" name="name" id="fname" placeholder="Enter your first name">
+        <input type="text" name="name" id="lname" placeholder="Enter your first name">
+        <input type="email" name="email" id="email" placeholder="Enter you email">
+        <input type="password" name="password" id="password" placeholder="Password">
+        <button type="submit" id="sub-btn" onclick="closeloginpopup()">submit</button>
+    </div>
+
+
+    <script>
+        var loginpop = document.getElementById("login");
+        const openloginpopup = () => {
+            loginpop.classList.add("login-pop");
+        }
+        const closeloginpopup = () => {
+            loginpop.classList.remove("login-pop");
+        }
+    </script>
+
+    <script>
+        var x = document.getElementById("check-class");
+        const manushow = () => {
+            x.classList.add("menutab")
+        }
+        const manusremove = () => {
+            x.classList.remove("menutab")
+        }
+    </script>
+
+</body>
+
+</html>
